@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;700;800&display=swap');
 
 body{
-    background-image: linear-gradient(-135deg, #701e96, #132dad);
+    background-image: linear-gradient(90deg, #701e96, #132dad);
     
 }
 
 .cadastro{
     background-color: rgb(14, 14, 41);
-    width: 40%;
+    width: 100%;
     margin: auto;
-    height: 600px;
+    height: fit-content;
     margin-top: 15px;
     padding-top: 25px;
     box-sizing: border-box;
@@ -17,6 +17,11 @@ body{
     color: aliceblue;
     box-shadow: 15px 20px 100px rgba(0,0,0,0.5);
     
+}
+
+.form{
+  width: fit-content;
+  font-family: 'Inconsolata', monospace;
 }
 
 .cad {
@@ -67,7 +72,7 @@ body{
 }
 
 .titulo-cadastro{
-    animation: neon 10s infinite linear;
+    animation: neon 7s infinite linear;
 }
 
 .name, .email, .tele, .cidade, .estado, .endereço{
@@ -80,6 +85,23 @@ body{
     font-family: 'Inconsolata', monospace;
     font-size: 15px;   
     position: absolute;
+}
+
+@media screen and (max-width: 1070px) {
+  .name, .email, .tele, .cidade, .estado, .endereço{
+    width: 35%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .name, .email, .tele, .cidade, .estado, .endereço{
+    width: 74%;
+  }
+}
+
+input .name{
+  margin-bottom:200px;
 }
 
 .label-nome, .label-email, .label-tele, .label-cidade, .label-estado, .label-endereço{
@@ -136,14 +158,7 @@ body{
     color: #932dc2;
 }
 
-
-.form{
-    padding-left: 5%;
-    font-family: 'Inconsolata', monospace;
-}
-
 .data-nasc{
-    padding-left: 5%;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -165,7 +180,6 @@ body{
 }
 
 .baixo{
-    padding-left: 5%;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -181,6 +195,7 @@ body{
     font-size: 15px;
     font-weight: 700;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .botao:hover{
@@ -190,10 +205,5 @@ body{
 
 .bot{
     text-align: center;
-    position: relative;
     margin-top: 30px;
-}
-
-.ab{
-    height: 64px;
 }
