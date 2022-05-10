@@ -96,7 +96,7 @@ body{
 
 @media screen and (max-width: 600px) {
   .name, .email, .tele, .cidade, .estado, .endereço{
-    width: 74%;
+    width: 72%;
   }
 }
 
